@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tempo</title>
-  <meta name="description" content="Tempo is a mobile app from Tempo Check LLC. People at a place say how it feels right now: quiet, building, busy, or packed. It opens first on 2nd Street in Belmont Shore.">
+  <meta name="description" content="Tempo is a live check of the night, from Tempo Check LLC.">
   <meta name="theme-color" content="#e7dfd2">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -39,110 +39,20 @@
     <section class="lead">
       <p class="kicker">Tempo Check LLC</p>
       <h1>A live check of the night.</h1>
-      <p class="dek">People at a place say how it feels right now.</p>
     </section>
 
-    <section class="meter-block" aria-labelledby="meter-title">
-      <div class="section-head">
-        <h2 id="meter-title">Four words. That is the meter.</h2>
-        <p>A place reads as one of these. The word comes from the people there.</p>
-      </div>
+    <section class="meter-block">
       <ol class="meter">
-        <li class="quiet">
-          <span>Quiet</span>
-          <small>Easy to walk in.</small>
-        </li>
-        <li class="building">
-          <span>Building</span>
-          <small>It is starting to fill.</small>
-        </li>
-        <li class="busy">
-          <span>Busy</span>
-          <small>The room is moving.</small>
-        </li>
-        <li class="packed">
-          <span>Packed</span>
-          <small>Little room left.</small>
-        </li>
+        <li class="quiet"><span>Quiet</span></li>
+        <li class="building"><span>Building</span></li>
+        <li class="busy"><span>Busy</span></li>
+        <li class="packed"><span>Packed</span></li>
       </ol>
-      <p class="blank"><span class="ring" aria-hidden="true"></span>No recent check. Ninety minutes with no check, and the meter stays blank.</p>
-    </section>
-
-    <section class="steps" aria-labelledby="steps-title">
-      <h2 id="steps-title">One current check from each person.</h2>
-      <ol>
-        <li>
-          <em>01</em>
-          <h3>You are there.</h3>
-          <p>The check comes from a person at the place.</p>
-        </li>
-        <li>
-          <em>02</em>
-          <h3>One current check.</h3>
-          <p>A new check from that person replaces the last one.</p>
-        </li>
-        <li>
-          <em>03</em>
-          <h3>Ninety minutes.</h3>
-          <p>After that, with nothing new, Tempo leaves the meter blank.</p>
-        </li>
-      </ol>
-    </section>
-
-    <section class="open" aria-labelledby="open-title">
-      <div class="section-head">
-        <h2 id="open-title">It opens on one street. Then the next.</h2>
-        <p>The first street is 2nd Street in Belmont Shore, Long Beach. The same check opens on the next street after that.</p>
-      </div>
-      <ol class="phases">
-        <li class="now">
-          <div class="mini" aria-hidden="true">
-            <span class="lane"></span>
-            <i class="dot packed"></i>
-            <i class="dot busy"></i>
-            <i class="dot building"></i>
-            <i class="dot quiet"></i>
-          </div>
-          <p class="phase">First</p>
-          <p class="street-name">2nd Street</p>
-          <p class="place">Belmont Shore, Long Beach</p>
-        </li>
-        <li>
-          <div class="mini two" aria-hidden="true">
-            <span class="lane"></span>
-            <span class="lane b"></span>
-            <i class="dot packed"></i>
-            <i class="dot busy"></i>
-            <i class="dot quiet"></i>
-          </div>
-          <p class="phase">Then</p>
-          <p class="street-name">The next street</p>
-          <p class="place">The same meter, on a new map.</p>
-        </li>
-        <li>
-          <div class="mini many" aria-hidden="true">
-            <span class="lane"></span>
-            <span class="lane b"></span>
-            <span class="lane c"></span>
-            <i class="dot packed"></i>
-            <i class="dot busy"></i>
-            <i class="dot building"></i>
-            <i class="dot quiet"></i>
-            <i class="dot packed b"></i>
-            <i class="dot busy b"></i>
-          </div>
-          <p class="phase">After</p>
-          <p class="street-name">More of the night</p>
-          <p class="place">Street after street, the same check.</p>
-        </li>
-      </ol>
+      <p class="blank"><span class="ring" aria-hidden="true"></span>No recent check after 90 minutes.</p>
     </section>
 
     <footer>
-      <div>
-        <p class="brand">Tempo</p>
-        <p class="company">Tempo Check LLC makes Tempo, a mobile app for how busy a nightlife place is right now.</p>
-      </div>
+      <p class="brand">Tempo</p>
       <address>
         <a href="mailto:admin@tempoapp.us">admin@tempoapp.us</a>
         <span>Los Angeles</span>
