@@ -251,6 +251,14 @@ h1 {
   font-size: 0.95rem;
 }
 
+@media (min-width: 801px) {
+  .phones figure:last-child img {
+    aspect-ratio: 900 / 1040;
+    object-fit: cover;
+    object-position: top center;
+  }
+}
+
 footer {
   display: flex;
   justify-content: space-between;
