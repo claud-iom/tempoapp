@@ -210,6 +210,65 @@ h1 {
 .blank .dots { color: var(--muted); gap: 0.32rem; }
 .blank .dots i { width: 0.78rem; height: 0.78rem; }
 
+.block { margin-top: 2.8rem; }
+
+.block h2 {
+  margin: 0 0 0.85rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.facts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.facts li,
+.split article {
+  min-width: 0;
+  padding: 1.2rem 1.15rem 1.25rem;
+  background: var(--bg);
+  border-radius: 1.15rem;
+}
+
+.facts h3,
+.split h3 {
+  margin: 0 0 0.55rem;
+  font-family: "Fraunces Tempo", Georgia, serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: clamp(1.55rem, 2.4vw, 2rem);
+  letter-spacing: -0.03em;
+  line-height: 0.95;
+}
+
+.facts p,
+.split p,
+.note {
+  margin: 0;
+  font-size: 1.08rem;
+  line-height: 1.45;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.note {
+  margin-top: 0.9rem;
+  color: var(--muted);
+}
+
 footer {
   display: flex;
   justify-content: space-between;
@@ -255,6 +314,8 @@ address span { color: var(--muted); }
   .meter .name { font-size: 1.85rem; }
   .dots { gap: 0.32rem; }
   .dots i { width: 0.85rem; height: 0.85rem; }
+  .facts,
+  .split { grid-template-columns: 1fr; }
   footer { flex-direction: column; }
   address { align-items: flex-start; text-align: left; }
 }
