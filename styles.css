@@ -141,7 +141,6 @@ h1 {
 .meter {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  align-items: end;
   gap: 0.75rem;
   margin: 1.15rem 0 0;
   padding: 0;
@@ -151,34 +150,54 @@ h1 {
 .meter li {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  gap: 0.35rem;
+  justify-content: space-between;
+  gap: 1.6rem;
   min-width: 0;
-  min-height: 13.5rem;
-  padding: 1rem;
+  min-height: 8.5rem;
+  padding: 1.15rem 1rem 1rem;
   overflow: hidden;
+  background: var(--bg);
   border-radius: 1.15rem;
-  color: #fffcf8;
 }
 
-.meter .quiet { min-height: 11rem; background: var(--quiet); }
-.meter .building { min-height: 13rem; background: var(--building); }
-.meter .busy { min-height: 15rem; background: var(--busy); color: var(--ink); }
-.meter .packed { min-height: 17rem; background: var(--packed); }
+.meter .quiet { color: var(--quiet); }
+.meter .building { color: var(--building); }
+.meter .busy { color: var(--busy); }
+.meter .packed { color: var(--packed); }
 
-.meter span {
+.dots {
+  display: flex;
+  flex: none;
+  gap: 0.42rem;
+  align-items: center;
+}
+
+.dots i {
+  width: 1.05rem;
+  height: 1.05rem;
+  border-radius: 50%;
+  background: currentColor;
+  display: block;
+}
+
+.dots i.off {
+  background: transparent;
+  box-shadow: inset 0 0 0 2px currentColor;
+}
+
+.meter .name {
   font-family: "Fraunces Tempo", Georgia, serif;
   font-style: italic;
-  font-size: clamp(2rem, 3.5vw, 3.3rem);
+  font-size: clamp(1.7rem, 3vw, 2.5rem);
   font-weight: 600;
   letter-spacing: -0.04em;
-  line-height: 0.85;
+  line-height: 0.9;
 }
 
 .blank {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0.85rem;
   margin: 0.75rem 0 0;
   padding: 1rem 1.1rem;
   background: var(--bg);
@@ -188,13 +207,8 @@ h1 {
   line-height: 1.4;
 }
 
-.ring {
-  flex: none;
-  width: 0.95rem;
-  height: 0.95rem;
-  border: 3px solid var(--muted);
-  border-radius: 50%;
-}
+.blank .dots { color: var(--muted); gap: 0.32rem; }
+.blank .dots i { width: 0.78rem; height: 0.78rem; }
 
 footer {
   display: flex;
@@ -238,12 +252,9 @@ address span { color: var(--muted); }
   }
   h1 { font-size: 2.45rem; }
   .meter { grid-template-columns: 1fr 1fr; }
-  .meter span { font-size: 1.7rem; }
-  .meter li,
-  .meter .quiet,
-  .meter .building,
-  .meter .busy,
-  .meter .packed { min-height: 8.6rem; }
+  .meter .name { font-size: 1.85rem; }
+  .dots { gap: 0.32rem; }
+  .dots i { width: 0.85rem; height: 0.85rem; }
   footer { flex-direction: column; }
   address { align-items: flex-start; text-align: left; }
 }
