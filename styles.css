@@ -212,61 +212,43 @@ h1 {
 
 .block { margin-top: 2.8rem; }
 
-.block h2 {
-  margin: 0 0 0.85rem;
+.purpose {
+  max-width: 12em;
+  margin: 0;
+  font-size: clamp(2.1rem, 4.4vw, 3.3rem);
+  font-weight: 650;
+  letter-spacing: -0.045em;
+  line-height: 0.98;
+}
+
+.purpose-note {
+  margin: 0.85rem 0 0;
+  color: var(--muted);
+  font-size: 1.15rem;
+  line-height: 1.4;
+}
+
+.phones {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 24rem));
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.phones figure { margin: 0; }
+
+.phones img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 1.5rem;
+  background: var(--bg);
+}
+
+.phones figcaption {
+  margin-top: 0.65rem;
   color: var(--muted);
   font-size: 0.95rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
-.facts {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0.75rem;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.facts li,
-.split article {
-  min-width: 0;
-  padding: 1.2rem 1.15rem 1.25rem;
-  background: var(--bg);
-  border-radius: 1.15rem;
-}
-
-.facts h3,
-.split h3 {
-  margin: 0 0 0.55rem;
-  font-family: "Fraunces Tempo", Georgia, serif;
-  font-style: italic;
-  font-weight: 600;
-  font-size: clamp(1.55rem, 2.4vw, 2rem);
-  letter-spacing: -0.03em;
-  line-height: 0.95;
-}
-
-.facts p,
-.split p,
-.note {
-  margin: 0;
-  font-size: 1.08rem;
-  line-height: 1.45;
-}
-
-.split {
-  display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
-  gap: 0.75rem;
-  margin-top: 0.75rem;
-}
-
-.note {
-  margin-top: 0.9rem;
-  color: var(--muted);
 }
 
 footer {
@@ -314,8 +296,7 @@ address span { color: var(--muted); }
   .meter .name { font-size: 1.85rem; }
   .dots { gap: 0.32rem; }
   .dots i { width: 0.85rem; height: 0.85rem; }
-  .facts,
-  .split { grid-template-columns: 1fr; }
+  .phones { grid-template-columns: minmax(0, 22rem); }
   footer { flex-direction: column; }
   address { align-items: flex-start; text-align: left; }
 }
