@@ -105,11 +105,6 @@ a:focus-visible {
 
 .bar .brand { font-size: clamp(2.4rem, 5vw, 3.4rem); }
 
-.bar a {
-  text-decoration: none;
-  font-size: 0.95rem;
-}
-
 main {
   position: relative;
   z-index: 1;
@@ -293,7 +288,6 @@ address span { color: var(--muted); }
   .stage { height: 15.5rem; }
   .bar { padding-inline: 1rem; }
   .bar .brand { font-size: 2.2rem; }
-  .bar a { font-size: 0.82rem; }
   main {
     width: calc(100% - 0.75rem);
     margin-top: -1.4rem;
