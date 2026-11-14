@@ -292,24 +292,54 @@ footer {
 
 footer .brand { font-size: 3rem; }
 
-address {
+.foot-links {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   gap: 0.35rem;
-  margin: 0;
-  font-style: normal;
   text-align: right;
 }
 
-address a {
+.foot-links a {
   font-size: 1.15rem;
   font-weight: 600;
   letter-spacing: -0.02em;
   text-underline-offset: 0.18em;
 }
 
-address span { color: var(--muted); }
+.foot-links span { color: var(--muted); }
+
+body.doc main {
+  width: min(40rem, calc(100% - 1.5rem));
+  margin: 0 auto;
+  padding-top: 0.4rem;
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+body.doc .bar {
+  width: min(40rem, calc(100% - 1.5rem));
+  margin: 0 auto;
+  padding-inline: 0;
+}
+
+body.doc h1 { max-width: none; font-size: clamp(2.4rem, 6vw, 3.5rem); }
+
+.doc h2 {
+  margin: 1.55rem 0 0.3rem;
+  font-size: 1.15rem;
+  letter-spacing: -0.02em;
+}
+
+.doc p {
+  margin: 0.25rem 0 0;
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+.doc .dated { color: var(--muted); margin-top: 0.7rem; }
+.doc .strong { font-weight: 650; }
 
 @media (max-width: 800px) {
   .stage { height: 15.5rem; }
@@ -327,5 +357,5 @@ address span { color: var(--muted); }
   .dots i { width: 0.85rem; height: 0.85rem; }
   .phones { grid-template-columns: minmax(0, 22rem); }
   footer { flex-direction: column; }
-  address { align-items: flex-start; text-align: left; }
+  .foot-links { align-items: flex-start; text-align: left; }
 }
