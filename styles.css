@@ -205,6 +205,23 @@ h1 {
 .blank .dots { color: var(--muted); gap: 0.32rem; }
 .blank .dots i { width: 0.78rem; height: 0.78rem; }
 
+.cover {
+  margin-top: 2.2rem;
+}
+
+.cover p {
+  max-width: 46rem;
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.45;
+  letter-spacing: -0.02em;
+}
+
+.cover-places {
+  margin-top: 0.45rem;
+  color: var(--muted);
+}
+
 .block { margin-top: 2.8rem; }
 
 .purpose {
